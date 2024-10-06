@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="NC_PaletteTest.PaletteDemo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NC_PaletteTest"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="400">
+    <Grid Background="White">
+		<Canvas>
+			<Label Content="Наименование документа:" Canvas.Left="20"></Label>
+			<TextBox x:Name="TextBox_DocName" Canvas.Left="20" Canvas.Top="50" MinWidth="200"></TextBox>
+		</Canvas>
+    </Grid>
+</UserControl>

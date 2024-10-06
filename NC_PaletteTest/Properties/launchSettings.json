@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "NC_PaletteTest": {
+      "commandName": "Project"
+    },
+    "nc24.1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Nanosoft\\nanoCAD x64 24.1\\nCad.exe",
+      "commandLineArgs": "-g \"$(TargerPath)\""
+    }
+  }
+}
