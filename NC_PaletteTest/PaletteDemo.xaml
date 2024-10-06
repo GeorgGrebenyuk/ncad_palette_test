@@ -4,12 +4,32 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NC_PaletteTest"
+				 xmlns:xctk_pg="clr-namespace:Xceed.Wpf.Toolkit.PropertyGrid;assembly=DotNetProjects.Wpf.Extended.Toolkit"
              mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="400">
-    <Grid Background="White">
-		<Canvas>
-			<Label Content="Наименование документа:" Canvas.Left="20"></Label>
-			<TextBox x:Name="TextBox_DocName" Canvas.Left="20" Canvas.Top="50" MinWidth="200"></TextBox>
-		</Canvas>
-    </Grid>
+             MinHeight="300" MinWidth="250">
+	<Grid Background="White">
+		<StackPanel>
+			<Label Content="Структура объекта:" ></Label>
+			<TreeView x:Name="treeView1"
+			VerticalAlignment="Stretch"
+			HorizontalAlignment="Stretch"
+			ScrollViewer.HorizontalScrollBarVisibility="Visible"
+			ScrollViewer.VerticalScrollBarVisibility="Visible" />
+			<Label Content="Параметры:"/>
+			<xctk_pg:PropertyGrid
+			x:Name="propertyGrid1"
+			ShowSummary="True"
+			Filter=""
+			IsCategorized="True"
+			ShowAdvancedOptions="True"
+			IsReadOnly="False"
+			HideInheritedProperties="False"
+			ShowHorizontalScrollBar="True"
+			VerticalAlignment="Stretch"
+			HorizontalAlignment="Stretch"
+			Width="auto" 
+			Height="auto">
+			</xctk_pg:PropertyGrid>
+		</StackPanel>
+	</Grid>
 </UserControl>

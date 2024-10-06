@@ -23,8 +23,6 @@ namespace NC_PaletteTest
         public PaletteDemo()
         {
             InitializeComponent();
-
-            this.TextBox_DocName.Text = HostMgd.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Name;
         }
     }
 }

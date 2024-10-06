@@ -20,6 +20,10 @@
       <HintPath>C:\Program Files\Nanosoft\nanoCAD x64 24.1\bin\hostmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="DotNetProjects.Wpf.Extended.Toolkit">
+      <HintPath>C:\Program Files\Nanosoft\nanoCAD x64 24.1\bin\DotNetProjects.Wpf.Extended.Toolkit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
